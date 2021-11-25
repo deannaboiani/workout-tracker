@@ -9,11 +9,11 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-const routes = require("./routes")
+const routes = require("./controllers")
 
 const PORT = process.env.PORT || 3000;
 
-const db = require("./models");
+const db = require("./models/Workout");
 
 const app = express();
 
@@ -28,44 +28,7 @@ app.use(routes);
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutseed", { useNewUrlParser: true });
 
-db.Workout.create({ name: "Workout Plan" })
-  .then(dbWorkout => {
-    console.log(dbWorkout);
-  })
-  .catch(({message}) => {
-    console.log(message);
-  });
 
-  app.get("/exercises", (req, res) => {
-    db.Exercise.find({})
-      .then(dbExercise => {
-        res.json(dbExercise);
-      })
-      .catch(err => {
-        res.json(err);
-      });
-  });
-
-  app.get("/wokrouts", (req, res) => {
-    db.Workout.find({})
-      .then(dbWorkout => {
-        res.json(dbWorkout);
-      })
-      .catch(err => {
-        res.json(err);
-      });
-  });
-  
-  app.get("/populated", (req, res) => {
-    db.Workout.find({})
-      .populate("exercises")
-      .then(dbWorkout => {
-        res.json(dbWorkout);
-      })
-      .catch(err => {
-        res.json(err);
-      });
-  });
   
 // Set the app to listen on port 3000
 app.listen(PORT, () => {

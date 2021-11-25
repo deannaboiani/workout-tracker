@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const {Workout} = require("../../models")
+const {Exercise} = require("../../models")
 
 router.get("/", (req, res) => {
-    Workout.find({})
-        .then(dbWorkout => {
-            res.json(dbWorkout);
+    Exercise.find({})
+        .then(dbExercise => {
+            res.json(dbExercise);
         }).catch(err => {
             console.log(err)
         })

@@ -9,7 +9,8 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-const routes = require("./controllers")
+const htmlRoutes = require("./controllers/htmlRoutes");
+const workoutRoutes = require("./controllers/workoutRoutes")
 
 const PORT = process.env.PORT || 3000;
 
@@ -24,7 +25,8 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-app.use(routes);
+app.use(htmlRoutes);
+app.use(workoutRoutes);
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutseed", { useNewUrlParser: true });
 

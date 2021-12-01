@@ -4,7 +4,7 @@
 A fitness tracking app that allows you to add and store new workouts.
 
 ## Table of Contents
-- [Budget Tracker]
+- [Workout Tracker]
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
@@ -16,9 +16,7 @@ A fitness tracking app that allows you to add and store new workouts.
 ## Installation
 Visit the app [here!]()
 
-## Usage
-### Screenshots 
-![Home](./public/img/preview.png)
+
 
 
 ## Contributing

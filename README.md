@@ -8,7 +8,7 @@ A fitness tracking app that allows you to add and store new workouts.
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
-  - [Usage](#usage)
+  - [Screenshot](#sceenshot)
   - [Contributing](#contributing)
   - [License](#license)
   - [Questions](#questions)
@@ -17,7 +17,7 @@ A fitness tracking app that allows you to add and store new workouts.
 Visit the app [here!]()
 
 
-
+## Screenshot
 
 ## Contributing
 To contribute, contact me below!

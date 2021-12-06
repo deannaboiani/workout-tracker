@@ -18,6 +18,7 @@ Visit the app [here!](https://polar-inlet-76842.herokuapp.com/)
 
 
 ## Screenshot
+<img width="1440" alt="Screen Shot 2021-12-06 at 12 56 33 PM" src="https://user-images.githubusercontent.com/89818334/144922672-3c66c08d-e8bf-480c-8f2c-038d963fc622.png">
 
 
 ## Contributing
